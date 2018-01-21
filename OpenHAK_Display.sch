@@ -1,1 +1,299 @@
 EESchema Schematic File Version 2
+LIBS:Solutions
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Tympan
+EELAYER 25 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "OpenHAK OLED Display"
+Date ""
+Rev "1.0.0"
+Comp "5Volt Labs"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L OLED_64x48 LCD?
+U 1 1 5A64ECF1
+P 4350 3700
+F 0 "LCD?" H 4700 2800 60  0000 C CNN
+F 1 "OLED_64x48" H 4400 4500 60  0000 C CNN
+F 2 "" H 3700 4400 60  0001 C CNN
+F 3 "" H 3700 4400 60  0001 C CNN
+	1    4350 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 5A64EEAC
+P 3550 2400
+F 0 "#PWR?" H 3550 2250 50  0001 C CNN
+F 1 "+3V3" H 3550 2540 50  0000 C CNN
+F 2 "" H 3550 2400 50  0000 C CNN
+F 3 "" H 3550 2400 50  0000 C CNN
+	1    3550 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 5A64EEC3
+P 7150 3050
+F 0 "#PWR?" H 7150 2900 50  0001 C CNN
+F 1 "+3V3" H 7150 3190 50  0000 C CNN
+F 2 "" H 7150 3050 50  0000 C CNN
+F 3 "" H 7150 3050 50  0000 C CNN
+	1    7150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A64EF20
+P 4400 5150
+F 0 "#PWR?" H 4400 4900 50  0001 C CNN
+F 1 "GND" H 4400 5000 50  0000 C CNN
+F 2 "" H 4400 5150 50  0000 C CNN
+F 3 "" H 4400 5150 50  0000 C CNN
+	1    4400 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5A64EFAD
+P 3150 3400
+F 0 "C?" H 3160 3470 50  0000 L CNN
+F 1 "1uF" H 3160 3320 50  0000 L CNN
+F 2 "" H 3150 3400 50  0000 C CNN
+F 3 "" H 3150 3400 50  0000 C CNN
+	1    3150 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5A64EFCA
+P 3150 3750
+F 0 "C?" H 3160 3820 50  0000 L CNN
+F 1 "1uF" H 3160 3670 50  0000 L CNN
+F 2 "" H 3150 3750 50  0000 C CNN
+F 3 "" H 3150 3750 50  0000 C CNN
+	1    3150 3750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4750 4250 5150
+Wire Wire Line
+	2950 5150 4550 5150
+Wire Wire Line
+	4550 5150 4550 4750
+Connection ~ 4400 5150
+Wire Wire Line
+	4350 4750 4350 5150
+Connection ~ 4350 5150
+Wire Wire Line
+	4450 4750 4450 5150
+Connection ~ 4450 5150
+Wire Wire Line
+	3700 4500 3650 4500
+Wire Wire Line
+	3650 4500 3650 5150
+Connection ~ 4250 5150
+$Comp
+L R_Small R?
+U 1 1 5A64F246
+P 3400 2600
+F 0 "R?" H 3430 2620 50  0000 L CNN
+F 1 "10K" H 3430 2560 50  0000 L CNN
+F 2 "" H 3400 2600 50  0000 C CNN
+F 3 "" H 3400 2600 50  0000 C CNN
+	1    3400 2600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4400 3400 4400
+Wire Wire Line
+	3400 4400 3400 2700
+Wire Wire Line
+	5050 3200 5200 3200
+Wire Wire Line
+	5200 3200 5200 2750
+Wire Wire Line
+	5200 2750 3400 2750
+Connection ~ 3400 2750
+Wire Wire Line
+	3400 2500 3400 2450
+Wire Wire Line
+	3400 2450 3550 2450
+Wire Wire Line
+	3550 2400 3550 3100
+Wire Wire Line
+	3550 3000 3700 3000
+Connection ~ 3550 2450
+Wire Wire Line
+	3550 3100 3700 3100
+Connection ~ 3550 3000
+$Comp
+L C_Small C?
+U 1 1 5A64F370
+P 3550 4800
+F 0 "C?" H 3560 4870 50  0000 L CNN
+F 1 "2.2uF" H 3560 4720 50  0000 L CNN
+F 2 "" H 3550 4800 50  0000 C CNN
+F 3 "" H 3550 4800 50  0000 C CNN
+	1    3550 4800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5A64F3A5
+P 3250 4800
+F 0 "C?" H 3260 4870 50  0000 L CNN
+F 1 "4.7uF" H 3260 4720 50  0000 L CNN
+F 2 "" H 3250 4800 50  0000 C CNN
+F 3 "" H 3250 4800 50  0000 C CNN
+	1    3250 4800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 5A64F3D9
+P 2950 4800
+F 0 "R?" H 2980 4820 50  0000 L CNN
+F 1 "390K" H 2980 4760 50  0000 L CNN
+F 2 "" H 2950 4800 50  0000 C CNN
+F 3 "" H 2950 4800 50  0000 C CNN
+	1    2950 4800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4700 3550 4250
+Wire Wire Line
+	3550 4250 3700 4250
+Wire Wire Line
+	3250 4700 3250 4150
+Wire Wire Line
+	3250 4150 3700 4150
+Wire Wire Line
+	2950 4700 2950 4050
+Wire Wire Line
+	2950 4050 3700 4050
+Wire Wire Line
+	2950 4900 2950 5150
+Connection ~ 3650 5150
+Wire Wire Line
+	3250 4900 3250 5150
+Connection ~ 3250 5150
+Wire Wire Line
+	3550 4900 3550 5150
+Connection ~ 3550 5150
+Wire Wire Line
+	3700 3300 3150 3300
+Wire Wire Line
+	3700 3550 3150 3550
+Wire Wire Line
+	3150 3550 3150 3500
+Wire Wire Line
+	3700 3650 3150 3650
+Wire Wire Line
+	3700 3900 3150 3900
+Wire Wire Line
+	3150 3900 3150 3850
+Text Notes 3950 2750 0    60   ~ 0
+I2C Address 0x3D
+Wire Wire Line
+	5050 3100 5300 3100
+Wire Wire Line
+	5050 3600 5300 3600
+Wire Wire Line
+	5050 3700 5300 3700
+NoConn ~ 5050 3000
+NoConn ~ 5050 3300
+NoConn ~ 5050 3400
+NoConn ~ 5050 3800
+NoConn ~ 5050 3900
+NoConn ~ 5050 4000
+NoConn ~ 5050 4100
+NoConn ~ 5050 4200
+NoConn ~ 5050 4300
+Text Label 5300 3100 0    60   ~ 0
+OLED_RST
+Text Label 5300 3600 0    60   ~ 0
+SCL
+Text Label 5300 3700 0    60   ~ 0
+SDA
+$Comp
+L CONN_01X08 P?
+U 1 1 5A64F98A
+P 7650 3650
+F 0 "P?" H 7650 4100 50  0000 C CNN
+F 1 "CONN_01X08" V 7750 3650 50  0000 C CNN
+F 2 "" H 7650 3650 50  0000 C CNN
+F 3 "" H 7650 3650 50  0000 C CNN
+	1    7650 3650
+	1    0    0    -1  
+$EndComp
+Text Notes 7850 4050 0    70   ~ 0
+GND\n3V3\nPIN 4\nUART TX\nPIN2\nUART RX\nPIN 3\nRST
+$Comp
+L GND #PWR?
+U 1 1 5A64FAC1
+P 7500 2950
+F 0 "#PWR?" H 7500 2700 50  0001 C CNN
+F 1 "GND" H 7500 2800 50  0000 C CNN
+F 2 "" H 7500 2950 50  0000 C CNN
+F 3 "" H 7500 2950 50  0000 C CNN
+	1    7500 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 3300 7450 3300
+Wire Wire Line
+	7350 2900 7350 3300
+Wire Wire Line
+	7350 2900 7500 2900
+Wire Wire Line
+	7500 2900 7500 2950
+Wire Wire Line
+	7450 3400 7150 3400
+Wire Wire Line
+	7150 3400 7150 3050
+NoConn ~ 7450 3600
+NoConn ~ 7450 3800
+NoConn ~ 7450 4000
+Text Label 7450 3500 2    60   ~ 0
+OLED_RST
+Text Label 7450 3700 2    60   ~ 0
+SCL
+Text Label 7450 3900 2    60   ~ 0
+SDA
+$EndSCHEMATC
