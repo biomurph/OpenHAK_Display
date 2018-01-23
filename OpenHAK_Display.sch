@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:Tympan
+LIBS:OpenHAK_Display-cache
 EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
@@ -69,12 +70,12 @@ $EndComp
 $Comp
 L +3V3 #PWR?
 U 1 1 5A64EEC3
-P 7150 3050
-F 0 "#PWR?" H 7150 2900 50  0001 C CNN
-F 1 "+3V3" H 7150 3190 50  0000 C CNN
-F 2 "" H 7150 3050 50  0000 C CNN
-F 3 "" H 7150 3050 50  0000 C CNN
-	1    7150 3050
+P 6900 2900
+F 0 "#PWR?" H 6900 2750 50  0001 C CNN
+F 1 "+3V3" H 6900 3040 50  0000 C CNN
+F 2 "" H 6900 2900 50  0000 C CNN
+F 3 "" H 6900 2900 50  0000 C CNN
+	1    6900 2900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -111,7 +112,7 @@ F 3 "" H 3150 3750 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 4750 4250 5150
+	4250 5150 4250 4750
 Wire Wire Line
 	2950 5150 4550 5150
 Wire Wire Line
@@ -140,9 +141,9 @@ F 3 "" H 3400 2600 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3700 4400 3400 4400
+	3400 4400 3700 4400
 Wire Wire Line
-	3400 4400 3400 2700
+	3400 2700 3400 4400
 Wire Wire Line
 	5050 3200 5200 3200
 Wire Wire Line
@@ -178,11 +179,11 @@ L C_Small C?
 U 1 1 5A64F3A5
 P 3250 4800
 F 0 "C?" H 3260 4870 50  0000 L CNN
-F 1 "4.7uF" H 3260 4720 50  0000 L CNN
+F 1 "4.7uF 16V" H 3100 4700 50  0000 L CNN
 F 2 "" H 3250 4800 50  0000 C CNN
 F 3 "" H 3250 4800 50  0000 C CNN
 	1    3250 4800
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L R_Small R?
@@ -284,9 +285,9 @@ Wire Wire Line
 Wire Wire Line
 	7500 2900 7500 2950
 Wire Wire Line
-	7450 3400 7150 3400
+	7450 3400 6900 3400
 Wire Wire Line
-	7150 3400 7150 3050
+	6900 3400 6900 2900
 NoConn ~ 7450 3600
 NoConn ~ 7450 3800
 NoConn ~ 7450 4000
@@ -296,4 +297,38 @@ Text Label 7450 3700 2    60   ~ 0
 SCL
 Text Label 7450 3900 2    60   ~ 0
 SDA
+$Comp
+L C_Small C?
+U 1 1 5A6762A1
+P 7150 3000
+F 0 "C?" V 7200 3050 50  0000 L CNN
+F 1 "1uF" V 7200 2800 50  0000 L CNN
+F 2 "" H 7150 3000 50  0000 C CNN
+F 3 "" H 7150 3000 50  0000 C CNN
+	1    7150 3000
+	0    1    -1   0   
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5A676327
+P 7150 3150
+F 0 "C?" V 7200 3200 50  0000 L CNN
+F 1 "0.1uF" V 7250 2950 50  0000 L CNN
+F 2 "" H 7150 3150 50  0000 C CNN
+F 3 "" H 7150 3150 50  0000 C CNN
+	1    7150 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 3000 6900 3000
+Connection ~ 6900 3000
+Wire Wire Line
+	7050 3150 6900 3150
+Connection ~ 6900 3150
+Wire Wire Line
+	7250 3000 7350 3000
+Connection ~ 7350 3000
+Wire Wire Line
+	7250 3150 7350 3150
+Connection ~ 7350 3150
 $EndSCHEMATC
