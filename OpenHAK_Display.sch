@@ -240,7 +240,6 @@ Wire Wire Line
 NoConn ~ 5050 3000
 NoConn ~ 5050 3300
 NoConn ~ 5050 3400
-NoConn ~ 5050 3800
 NoConn ~ 5050 3900
 NoConn ~ 5050 4000
 NoConn ~ 5050 4100
@@ -331,4 +330,9 @@ Connection ~ 7350 3000
 Wire Wire Line
 	7250 3150 7350 3150
 Connection ~ 7350 3150
+Wire Wire Line
+	5050 3800 5150 3800
+Wire Wire Line
+	5150 3800 5150 3700
+Connection ~ 5150 3700
 $EndSCHEMATC
