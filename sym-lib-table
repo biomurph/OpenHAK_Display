@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name OpenHAK_Display-rescue)(type Legacy)(uri ${KIPRJMOD}/OpenHAK_Display-rescue.lib)(options "")(descr ""))
+  (lib (name Solutions1)(type Legacy)(uri /Users/biomurph/Documents/KiCad/library/Solutions.lib)(options "")(descr ""))
+  (lib (name Tympan)(type Legacy)(uri /Users/biomurph/Documents/KiCad/library/Tympan.lib)(options "")(descr ""))
+)

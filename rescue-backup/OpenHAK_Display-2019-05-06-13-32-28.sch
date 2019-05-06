@@ -1,6 +1,37 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:Solutions
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Tympan
 LIBS:OpenHAK_Display-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
@@ -15,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Solutions1:OLED_64x48 LCD1
+L OLED_64x48 LCD1
 U 1 1 5A64ECF1
 P 4350 3700
 F 0 "LCD1" H 4700 2800 60  0000 C CNN
@@ -26,7 +57,7 @@ F 3 "" H 3700 4400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR01
+L +3V3 #PWR01
 U 1 1 5A64EEAC
 P 3550 2400
 F 0 "#PWR01" H 3550 2250 50  0001 C CNN
@@ -37,7 +68,7 @@ F 3 "" H 3550 2400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR02
+L +3V3 #PWR02
 U 1 1 5A64EEC3
 P 6900 2900
 F 0 "#PWR02" H 6900 2750 50  0001 C CNN
@@ -48,7 +79,7 @@ F 3 "" H 6900 2900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR03
+L GND #PWR03
 U 1 1 5A64EF20
 P 4400 5150
 F 0 "#PWR03" H 4400 4900 50  0001 C CNN
@@ -59,7 +90,7 @@ F 3 "" H 4400 5150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C1
+L C_Small C1
 U 1 1 5A64EFAD
 P 3150 3400
 F 0 "C1" H 3160 3470 50  0000 L CNN
@@ -70,7 +101,7 @@ F 3 "" H 3150 3400 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C2
+L C_Small C2
 U 1 1 5A64EFCA
 P 3150 3750
 F 0 "C2" H 3160 3820 50  0000 L CNN
@@ -83,7 +114,7 @@ $EndComp
 Wire Wire Line
 	4250 5150 4250 4750
 Wire Wire Line
-	2950 5150 3250 5150
+	2950 5150 4550 5150
 Wire Wire Line
 	4550 5150 4550 4750
 Connection ~ 4400 5150
@@ -99,7 +130,7 @@ Wire Wire Line
 	3650 4500 3650 5150
 Connection ~ 4250 5150
 $Comp
-L Device:R_Small R2
+L R_Small R2
 U 1 1 5A64F246
 P 3400 2600
 F 0 "R2" H 3430 2620 50  0000 L CNN
@@ -112,7 +143,7 @@ $EndComp
 Wire Wire Line
 	3400 4400 3700 4400
 Wire Wire Line
-	3400 2700 3400 2750
+	3400 2700 3400 4400
 Wire Wire Line
 	5050 3200 5200 3200
 Wire Wire Line
@@ -125,7 +156,7 @@ Wire Wire Line
 Wire Wire Line
 	3400 2450 3550 2450
 Wire Wire Line
-	3550 2400 3550 2450
+	3550 2400 3550 3100
 Wire Wire Line
 	3550 3000 3700 3000
 Connection ~ 3550 2450
@@ -133,7 +164,7 @@ Wire Wire Line
 	3550 3100 3700 3100
 Connection ~ 3550 3000
 $Comp
-L Device:C_Small C4
+L C_Small C4
 U 1 1 5A64F370
 P 3550 4800
 F 0 "C4" H 3560 4870 50  0000 L CNN
@@ -144,7 +175,7 @@ F 3 "" H 3550 4800 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C3
+L C_Small C3
 U 1 1 5A64F3A5
 P 3250 4800
 F 0 "C3" H 3260 4870 50  0000 L CNN
@@ -155,7 +186,7 @@ F 3 "" H 3250 4800 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R1
+L R_Small R1
 U 1 1 5A64F3D9
 P 2950 4800
 F 0 "R1" H 2980 4820 50  0000 L CNN
@@ -205,7 +236,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 3600 5300 3600
 Wire Wire Line
-	5050 3700 5150 3700
+	5050 3700 5300 3700
 NoConn ~ 5050 3000
 NoConn ~ 5050 3300
 NoConn ~ 5050 3400
@@ -221,20 +252,20 @@ SCL
 Text Label 5300 3700 0    60   ~ 0
 SDA
 $Comp
-L OpenHAK_Display-rescue:CONN_01X08 P1
+L CONN_01X08 P1
 U 1 1 5A64F98A
 P 7650 3650
 F 0 "P1" H 7650 4100 50  0000 C CNN
 F 1 "CONN_01X08" V 7750 3650 50  0000 C CNN
-F 2 "Solutions:8_pin_Castellation_127" H 7650 3650 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch1.00mm" H 7650 3650 50  0001 C CNN
 F 3 "" H 7650 3650 50  0000 C CNN
 	1    7650 3650
 	1    0    0    -1  
 $EndComp
 Text Notes 7850 4050 0    70   ~ 0
-GND\n3V3\nPIN 25\nUART TX\nPIN2\nUART RX\nPIN 3\nRST
+GND\n3V3\nPIN 4\nUART TX\nPIN2\nUART RX\nPIN 3\nRST
 $Comp
-L power:GND #PWR04
+L GND #PWR04
 U 1 1 5A64FAC1
 P 7500 2950
 F 0 "#PWR04" H 7500 2700 50  0001 C CNN
@@ -247,7 +278,7 @@ $EndComp
 Wire Wire Line
 	7350 3300 7450 3300
 Wire Wire Line
-	7350 2900 7350 3000
+	7350 2900 7350 3300
 Wire Wire Line
 	7350 2900 7500 2900
 Wire Wire Line
@@ -255,7 +286,7 @@ Wire Wire Line
 Wire Wire Line
 	7450 3400 6900 3400
 Wire Wire Line
-	6900 3400 6900 3150
+	6900 3400 6900 2900
 NoConn ~ 7450 3600
 NoConn ~ 7450 3800
 NoConn ~ 7450 4000
@@ -266,7 +297,7 @@ SCL
 Text Label 7450 3900 2    60   ~ 0
 SDA
 $Comp
-L Device:C_Small C5
+L C_Small C5
 U 1 1 5A6762A1
 P 7150 3000
 F 0 "C5" V 7200 3050 50  0000 L CNN
@@ -277,7 +308,7 @@ F 3 "" H 7150 3000 50  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:C_Small C6
+L C_Small C6
 U 1 1 5A676327
 P 7150 3150
 F 0 "C6" V 7200 3200 50  0000 L CNN
@@ -304,34 +335,4 @@ Wire Wire Line
 Wire Wire Line
 	5150 3800 5150 3700
 Connection ~ 5150 3700
-Wire Wire Line
-	4400 5150 4450 5150
-Wire Wire Line
-	4350 5150 4400 5150
-Wire Wire Line
-	4450 5150 4550 5150
-Wire Wire Line
-	4250 5150 4350 5150
-Wire Wire Line
-	3400 2750 3400 4400
-Wire Wire Line
-	3550 2450 3550 3000
-Wire Wire Line
-	3550 3000 3550 3100
-Wire Wire Line
-	3650 5150 4250 5150
-Wire Wire Line
-	3250 5150 3550 5150
-Wire Wire Line
-	3550 5150 3650 5150
-Wire Wire Line
-	6900 3000 6900 2900
-Wire Wire Line
-	6900 3150 6900 3000
-Wire Wire Line
-	7350 3000 7350 3150
-Wire Wire Line
-	7350 3150 7350 3300
-Wire Wire Line
-	5150 3700 5300 3700
 $EndSCHEMATC
