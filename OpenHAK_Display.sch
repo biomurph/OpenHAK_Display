@@ -23,7 +23,7 @@ F 1 "OLED_64x48" H 4400 4500 60  0000 C CNN
 F 2 "Solutions:0.66in_OLED_Display" H 3700 4400 60  0001 C CNN
 F 3 "" H 3700 4400 60  0001 C CNN
 	1    4350 3700
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR01
@@ -34,7 +34,7 @@ F 1 "+3V3" H 3550 2540 50  0000 C CNN
 F 2 "" H 3550 2400 50  0000 C CNN
 F 3 "" H 3550 2400 50  0000 C CNN
 	1    3550 2400
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR02
@@ -45,7 +45,7 @@ F 1 "+3V3" H 6900 3040 50  0000 C CNN
 F 2 "" H 6900 2900 50  0000 C CNN
 F 3 "" H 6900 2900 50  0000 C CNN
 	1    6900 2900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR03
@@ -56,7 +56,7 @@ F 1 "GND" H 4400 5000 50  0000 C CNN
 F 2 "" H 4400 5150 50  0000 C CNN
 F 3 "" H 4400 5150 50  0000 C CNN
 	1    4400 5150
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C1
@@ -64,10 +64,10 @@ U 1 1 5A64EFAD
 P 3150 3400
 F 0 "C1" H 3160 3470 50  0000 L CNN
 F 1 "1uF" H 3160 3320 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3150 3400 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 3150 3400 50  0001 C CNN
 F 3 "" H 3150 3400 50  0000 C CNN
 	1    3150 3400
-	-1   0    0    -1
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C2
@@ -75,10 +75,10 @@ U 1 1 5A64EFCA
 P 3150 3750
 F 0 "C2" H 3160 3820 50  0000 L CNN
 F 1 "1uF" H 3160 3670 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3150 3750 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 3150 3750 50  0001 C CNN
 F 3 "" H 3150 3750 50  0000 C CNN
 	1    3150 3750
-	-1   0    0    -1
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4250 5150 4250 4750
@@ -104,10 +104,10 @@ U 1 1 5A64F246
 P 3400 2600
 F 0 "R2" H 3430 2620 50  0000 L CNN
 F 1 "10K" H 3430 2560 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3400 2600 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 3400 2600 50  0001 C CNN
 F 3 "" H 3400 2600 50  0000 C CNN
 	1    3400 2600
-	-1   0    0    -1
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	3400 4400 3700 4400
@@ -138,10 +138,10 @@ U 1 1 5A64F370
 P 3550 4800
 F 0 "C4" H 3560 4870 50  0000 L CNN
 F 1 "2.2uF" H 3560 4720 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3550 4800 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 3550 4800 50  0001 C CNN
 F 3 "" H 3550 4800 50  0000 C CNN
 	1    3550 4800
-	-1   0    0    -1
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C3
@@ -149,10 +149,10 @@ U 1 1 5A64F3A5
 P 3250 4800
 F 0 "C3" H 3260 4870 50  0000 L CNN
 F 1 "4.7uF 16V" H 3100 4700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3250 4800 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 3250 4800 50  0001 C CNN
 F 3 "" H 3250 4800 50  0000 C CNN
 	1    3250 4800
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R1
@@ -160,10 +160,10 @@ U 1 1 5A64F3D9
 P 2950 4800
 F 0 "R1" H 2980 4820 50  0000 L CNN
 F 1 "390K" H 2980 4760 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2950 4800 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 2950 4800 50  0001 C CNN
 F 3 "" H 2950 4800 50  0000 C CNN
 	1    2950 4800
-	-1   0    0    -1
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	3550 4700 3550 4250
@@ -229,7 +229,7 @@ F 1 "CONN_01X08" V 7750 3650 50  0000 C CNN
 F 2 "Solutions:8_pin_Castellation_127" H 7650 3650 50  0001 C CNN
 F 3 "" H 7650 3650 50  0000 C CNN
 	1    7650 3650
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text Notes 7850 4050 0    70   ~ 0
 GND\n3V3\nPIN 25\nUART TX\nPIN2\nUART RX\nPIN 3\nRST
@@ -242,7 +242,7 @@ F 1 "GND" H 7500 2800 50  0000 C CNN
 F 2 "" H 7500 2950 50  0000 C CNN
 F 3 "" H 7500 2950 50  0000 C CNN
 	1    7500 2950
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7350 3300 7450 3300
@@ -271,10 +271,10 @@ U 1 1 5A6762A1
 P 7150 3000
 F 0 "C5" V 7200 3050 50  0000 L CNN
 F 1 "1uF" V 7200 2800 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 7150 3000 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 7150 3000 50  0001 C CNN
 F 3 "" H 7150 3000 50  0000 C CNN
 	1    7150 3000
-	0    1    -1   0
+	0    1    -1   0   
 $EndComp
 $Comp
 L Device:C_Small C6
@@ -282,10 +282,10 @@ U 1 1 5A676327
 P 7150 3150
 F 0 "C6" V 7200 3200 50  0000 L CNN
 F 1 "0.1uF" V 7250 2950 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 7150 3150 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402" H 7150 3150 50  0001 C CNN
 F 3 "" H 7150 3150 50  0000 C CNN
 	1    7150 3150
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	7050 3000 6900 3000

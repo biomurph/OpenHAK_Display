@@ -226,7 +226,7 @@ U 1 1 5A64F98A
 P 7650 3650
 F 0 "P1" H 7650 4100 50  0000 C CNN
 F 1 "CONN_01X08" V 7750 3650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch1.27mm_SMD_Pin1Right" H 7650 3650 50  0001 C CNN
+F 2 "Solutions:8_pin_Castellation_127" H 7650 3650 50  0001 C CNN
 F 3 "" H 7650 3650 50  0000 C CNN
 	1    7650 3650
 	1    0    0    -1
