@@ -1,0 +1,6 @@
+*.csv
+*.bak
+*.net
+OpenHAK_Display.kicad_pcb-bak
+OpenHAK_Display-cache.lib
+OpenHAK_Display-rescue.lib
