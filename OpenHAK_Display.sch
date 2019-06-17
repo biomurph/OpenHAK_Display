@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:OpenHAK_Display-cache
 EELAYER 26 0
 EELAYER END
 $Descr A 11000 8500
@@ -328,4 +327,34 @@ Connection ~ 7400 4400
 Connection ~ 7000 4100
 NoConn ~ 7450 3300
 NoConn ~ 7450 3400
+$Comp
+L Device:C_Small C7
+U 1 1 5D07F71A
+P 5850 4450
+F 0 "C7" H 5900 4350 50  0000 L CNN
+F 1 "TEST POINT" H 5900 4550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5850 4450 50  0001 C CNN
+F 3 "" H 5850 4450 50  0000 C CNN
+	1    5850 4450
+	-1   0    0    -1  
+$EndComp
+Text Label 5850 4250 0    50   ~ 0
+VCC
+Wire Wire Line
+	5850 4350 5850 4250
+Wire Wire Line
+	5850 4550 5850 4650
+$Comp
+L power:GND #PWR05
+U 1 1 5D08272A
+P 5850 4650
+F 0 "#PWR05" H 5850 4400 50  0001 C CNN
+F 1 "GND" H 5850 4500 50  0000 C CNN
+F 2 "" H 5850 4650 50  0000 C CNN
+F 3 "" H 5850 4650 50  0000 C CNN
+	1    5850 4650
+	1    0    0    -1  
+$EndComp
+Text Label 3550 4250 0    50   ~ 0
+VCC
 $EndSCHEMATC
