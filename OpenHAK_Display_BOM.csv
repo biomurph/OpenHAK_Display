@@ -1,9 +1,0 @@
-"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
-1;"C1,C2,C5";"C_0603";3;"1uF";;;
-2;"C3";"C_0603";1;"4.7uF 16V";;;
-3;"C4";"C_0603";1;"2.2uF";;;
-4;"C6";"C_0603";1;"0.1uF";;;
-5;"LCD1";"0.66in_OLED_Display";1;"OLED_64x48";;;
-6;"P1";"Pin_Header_Straight_1x08_Pitch1.00mm";1;"CONN_01X08";;;
-7;"R1";"C_0603";1;"390K";;;
-8;"R2";"C_0603";1;"10K";;;
