@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:OpenHAK_Display-cache
 EELAYER 26 0
 EELAYER END
 $Descr A 11000 8500
@@ -231,7 +232,7 @@ F 3 "" H 7650 3800 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Text Notes 7750 4300 0    70   ~ 0
-PIN 21\nPIN 24\nPIN 25\nUART TX\nPIN2\nUART RX\nPIN 3\nRST\nVDD\nGND
+PIN 21\nPIN 24\nPIN 25\nSIM_RX\nPIN2\nSIM_TX\nPIN 3\nRST\nVDD\nGND
 $Comp
 L power:GND #PWR04
 U 1 1 5A64FAC1
@@ -357,4 +358,6 @@ F 3 "" H 5850 4650 50  0000 C CNN
 $EndComp
 Text Label 3550 4250 0    50   ~ 0
 VCC
+Text Notes 5050 2350 0    50   ~ 0
+OpenHAK Display Master Branch
 $EndSCHEMATC
