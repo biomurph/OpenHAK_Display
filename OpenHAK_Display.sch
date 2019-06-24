@@ -226,7 +226,7 @@ U 1 1 5A64F98A
 P 7650 3700
 F 0 "P1" H 7650 4150 50  0000 C CNN
 F 1 "M52-Series_Male_TH_Harwin" H 7500 3100 50  0000 C CNN
-F 2 "Solutions:M52-Series_M_TH_0.05_Harwin" H 7650 3700 50  0001 C CNN
+F 2 "Solutions:M52-Series_M_TH_0.05_8POS_Harwin" H 7650 3700 50  0001 C CNN
 F 3 "" H 7650 3700 50  0000 C CNN
 	1    7650 3700
 	-1   0    0    1   
